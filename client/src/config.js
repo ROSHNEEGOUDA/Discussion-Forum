@@ -1,6 +1,6 @@
 export const api = {  
-  tagsEndPoint: 'http://localhost:5000/tags/',
-  usersEndPoint: 'http://localhost:5000/users/',
-  postsEndPoint: 'http://localhost:5000/posts/',
-  repliesEndPoint: 'http://localhost:5000/reply/',
+  tagsEndPoint: 'https://discussion-forum-server-flame.vercel.app/tags/',
+  usersEndPoint: 'https://discussion-forum-server-flame.vercel.app/users/',
+  postsEndPoint: 'https://discussion-forum-server-flame.vercel.app/posts/',
+  repliesEndPoint: 'https://discussion-forum-server-flame.vercel.app/reply/',
 }
