@@ -27,7 +27,17 @@ mongoose
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors({ origin: '*' }));
+app.use(cors());
+
+// Alternatively, configure CORS with options
+app.use(cors({
+  origin: '*', // Consider specifying the actual origin in production
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  preflightContinue: false,
+  optionsSuccessStatus: 204
+}));
 
 app.get("/", (req, res) => {
   res.send("request successfully sent!");
