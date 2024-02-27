@@ -63,7 +63,7 @@ class PostPage extends Component {
       const replies_old = [...this.state.replies];
       const reply_updated = await http.put(api.repliesEndPoint + "like/" + id, {});
       const { data: replies } = await http.get(
-        api.repliesEndPoint + "/" + this.props.match.params.id
+        api.repliesEndPoint + this.props.match.params.id
       );
       console.log(replies);
       this.setState({ replies: replies });
