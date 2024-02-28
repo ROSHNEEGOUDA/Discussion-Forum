@@ -44,11 +44,10 @@ class PostPage extends Component {
     }
     return false;
   }
-  handleUpvote = async () => {
+  handleUpvote = async (id) => {
     try {
       const { data: post } = await http.put(
-        api.postEndPoint + this.props.match.params.id,
-        {}
+        api.postEndPoint + this.props.match.params.id
       );
       console.log(post);
       this.setState({ post: post[0] });
