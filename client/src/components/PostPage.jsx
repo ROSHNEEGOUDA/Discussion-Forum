@@ -92,7 +92,7 @@ class PostPage extends Component {
                 <span className="badge badge-success m-1 p-2">{tag.name}</span>
               ))}
             <div className="d-flex w-100 justify-content-between mt-3 mb-3">
-              <button
+{/*               <button
                 disabled={!user}
                 className={
                   this.checkLike()
@@ -103,7 +103,7 @@ class PostPage extends Component {
               >
                 <HandThumbsUpFill className="mr-2" />
                 {(post.upvotes && post.upvotes.length) || 0}
-              </button>
+              </button> */}
               <p>{post.views} Views</p>
             </div>
             <div
@@ -112,7 +112,7 @@ class PostPage extends Component {
             >
               <div>
                 <PersonCircle size={30} className="mr-2" />
-                Posted by {(post.author && post.author.username) || 0}
+{/*                 Posted by {(post.author && post.author.username) || 0} */}
               </div>
               <p class="mb-1">
                 <Moment fromNow>{post.time}</Moment>
@@ -130,7 +130,7 @@ class PostPage extends Component {
               <div className="container col-lg-6 shadow-lg p-3 mt-3 bg-body rounded">
                 <div className="ml-4">
                   <PersonCircle size={30} className="mr-3" />
-                  Posted by {reply.author.username}
+{/*                   Posted by {reply.author.username} */}
                 </div>
                 <div className="m-4">{reply.comment}</div>
                 <div className="d-flex w-100 justify-content-between mt-3 mb-3">
