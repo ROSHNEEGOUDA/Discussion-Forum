@@ -37,17 +37,17 @@ const NavBar = ({ user }) => {
             <React.Fragment>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/users/login">
-                  Login
+{/*                   Login */}
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/users/register">
-                  Register
+{/*                   Register */}
                 </NavLink>
               </li>
             </React.Fragment>
           )}
-          {user && (
+{/*           {user && (
             <React.Fragment>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/me">
@@ -60,7 +60,7 @@ const NavBar = ({ user }) => {
                 </NavLink>
               </li>
             </React.Fragment>
-          )}
+          )} */}
         </ul>
       </div>
     </nav>
