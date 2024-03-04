@@ -13,7 +13,7 @@ const Posts = (props) => {
           <div className="d-flex w-100 justify-content-between" key={post._id}>
             <h5 className="mb-1">{post.title}</h5>
           </div>
-          <small>Created by {post.author.name}</small>
+{/*           <small>Created by {post.author.name}</small> */}
           <br />
           <small className="overflow-hidden">{post.description}</small>
           <div className="mt-1">
@@ -22,7 +22,8 @@ const Posts = (props) => {
               <span className="badge badge-secondary m-1 p-2">{tag.name}</span>
             ))}
             <h6 className="mt-2">
-              {post.upvotes.length} Likes | {post.views} Views
+{/*               {post.upvotes.length} Likes | */}
+              {post.views} Views
             </h6>
           </div>
         </Link>
