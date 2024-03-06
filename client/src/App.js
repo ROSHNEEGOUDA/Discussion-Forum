@@ -39,7 +39,7 @@ class App extends Component {
           <Route path="/users/register" component={Register} />
           <Route path="/users/logout" component={Logout} />
           <Route
-            path="/dashboard"
+            path="/"
             render={(props) => <Dashboard {...props} user={this.state.user} />}
           />
           <Route path="/not-found" component={NotFound} />
