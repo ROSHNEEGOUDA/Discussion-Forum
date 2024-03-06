@@ -16,7 +16,7 @@ const NavBar = ({ user }) => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-         <NavLink className="nav-link ml-2" to="/dashboard">
+         <NavLink className="nav-link ml-2" to="/">
           Community Page
         </NavLink>
       </button>
@@ -29,7 +29,7 @@ const NavBar = ({ user }) => {
             </NavLink> */}
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link ml-2" to="/dashboard">
+            <NavLink className="nav-link ml-2" to="/">
              Community Page
             </NavLink>
           </li>
