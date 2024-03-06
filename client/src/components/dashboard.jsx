@@ -63,6 +63,7 @@ class Dashboard extends Component {
       return <p>There are no posts in the database!</p>;
     return (
       <React.Fragment>
+        <Jumotron/>
         <div className="container">
           <div className="row">
             <div className="col">
