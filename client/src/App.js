@@ -54,7 +54,7 @@ class App extends Component {
           <Route exact path="/" component={Jumotron} />
           <Route exact path="/" component={PostReply} />
           <Redirect from="/users" to="/users/login " />
-          <Redirect to="/not-found" />
+          <Redirect to="/dashboard" />
         </Switch>
       </div>
     );
