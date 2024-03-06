@@ -16,7 +16,7 @@ const NavBar = ({ user }) => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-         <NavLink className="nav-link ml-2" to="/">
+         <NavLink className="nav-link ml-2" to="/dashboard">
           Community Page
         </NavLink>
       </button>
@@ -24,7 +24,7 @@ const NavBar = ({ user }) => {
       <div className="collapse navbar-collapse row" id="navbarColor03">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-{/*             <NavLink className="nav-link ml-3" to="/">
+{/*             <NavLink className="nav-link ml-3" to="/dashboard">
               Home
             </NavLink> */}
           </li>
