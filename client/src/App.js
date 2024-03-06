@@ -51,7 +51,7 @@ class App extends Component {
             path="/post/:id"
             render={(props) => <PostPage {...props} user={this.state.user} />}
           />
-          <Route exact path="/" component={Jumotron} />
+          <Route exact path="/dashboard" component={Jumotron} />
           <Route exact path="/" component={PostReply} />
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/dashboard" />
