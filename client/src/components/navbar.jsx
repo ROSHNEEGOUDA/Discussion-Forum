@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 const NavBar = ({ user }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top ">
-      <NavLink className="navbar-brand" to="/">
+{/*       <NavLink className="navbar-brand" to="/">
         Community
-      </NavLink>
+      </NavLink> */}
       <button
         class="navbar-toggler"
         type="button"
@@ -16,19 +16,21 @@ const NavBar = ({ user }) => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+         <NavLink className="nav-link ml-2" to="/dashboard">
+          Community Page
+        </NavLink>
       </button>
 
       <div className="collapse navbar-collapse row" id="navbarColor03">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <NavLink className="nav-link ml-3" to="/">
+{/*             <NavLink className="nav-link ml-3" to="/">
               Home
-            </NavLink>
+            </NavLink> */}
           </li>
           <li className="nav-item">
             <NavLink className="nav-link ml-2" to="/dashboard">
-              Dashboard
+             Community Page
             </NavLink>
           </li>
         </ul>
